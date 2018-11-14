@@ -21,6 +21,5 @@ public class PlayerMovement : MonoBehaviour
         controller.SimpleMove(transform.right * moveSpeed * Input.GetAxis("Horizontal"));
 
         transform.Rotate(Vector3.up, Input.GetAxis("Mouse X"), Space.World);
-        transform.Rotate(Vector3.right, Input.GetAxis("Mouse Y"), Space.Self);
     }
 }

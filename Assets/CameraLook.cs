@@ -13,7 +13,8 @@ public class CameraLook : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        
+        Cursor.lockState = CursorLockMode.Locked;
+
         transform.Rotate(Vector3.right, invert?
         Input.GetAxis("Mouse Y") :
         -Input.GetAxis("Mouse Y"), Space.Self);
